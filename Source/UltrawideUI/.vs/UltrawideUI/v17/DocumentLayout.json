@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD237516-B75C-4C7E-B239-E885855EF35C}|UltrawideUI.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\ultrawideui\\source\\ultrawideui\\source\\ultrawideui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD237516-B75C-4C7E-B239-E885855EF35C}|UltrawideUI.csproj|solutionrelative:source\\ultrawideui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UltrawideUI.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUI\\Source\\UltrawideUI.cs",
+              "RelativeDocumentMoniker": "Source\\UltrawideUI.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUI\\Source\\UltrawideUI.cs",
+              "RelativeToolTip": "Source\\UltrawideUI.cs",
+              "ViewState": "AQIAAA0CAAAAAAAAAAAiwCcCAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T06:13:35.316Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
