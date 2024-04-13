@@ -11,7 +11,7 @@
 
 Icon made by agus raharjo from www.flaticon.com
   </description>
-  <modVersion>1.0.0</modVersion>
+  <modVersion>1.1.1</modVersion>
   <modDependencies>
     <li>
       <packageId>brrainz.harmony</packageId>
@@ -26,5 +26,6 @@ Icon made by agus raharjo from www.flaticon.com
   </modDependencies>
   <loadAfter>
     <li>UnlimitedHugs.HugsLib</li>
+    <li>Jaxe.RimHUD</li>
   </loadAfter>
 </ModMetaData>
