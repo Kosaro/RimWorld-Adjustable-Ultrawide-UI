@@ -5,6 +5,10 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltrawideUI", "UltrawideUI.csproj", "{BD237516-B75C-4C7E-B239-E885855EF35C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltrawideUIRimHUDPatch", "..\UltrawideUIRimHUDPatch\UltrawideUIRimHUDPatch.csproj", "{B4E2945B-5989-4414-973B-7A8F01D765DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltrawideUIFoodAlertPatch", "..\UltrawideUIFoodAlertPatch\UltrawideUIFoodAlertPatch.csproj", "{E496E44F-F3C0-4008-AB84-352B5C73A3A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{BD237516-B75C-4C7E-B239-E885855EF35C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD237516-B75C-4C7E-B239-E885855EF35C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD237516-B75C-4C7E-B239-E885855EF35C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4E2945B-5989-4414-973B-7A8F01D765DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4E2945B-5989-4414-973B-7A8F01D765DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4E2945B-5989-4414-973B-7A8F01D765DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4E2945B-5989-4414-973B-7A8F01D765DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E496E44F-F3C0-4008-AB84-352B5C73A3A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E496E44F-F3C0-4008-AB84-352B5C73A3A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E496E44F-F3C0-4008-AB84-352B5C73A3A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E496E44F-F3C0-4008-AB84-352B5C73A3A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

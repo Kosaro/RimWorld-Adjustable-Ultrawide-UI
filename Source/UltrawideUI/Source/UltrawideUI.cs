@@ -10,8 +10,6 @@ using System.Reflection;
 using RimWorld.Planet;
 using System.Linq;
 using HugsLib;
-using HugsLib.Settings;
-using RimHUD;
 
 namespace UltrawideUI
 {
@@ -22,10 +20,10 @@ namespace UltrawideUI
         public static float LeftMultiplier = 0f;
         public static float RightMultiplier = 1f;
 
-        private static readonly FieldInfo UIWidthFieldInfo = typeof(UltrawideUI).GetField(nameof(UltrawideUI.UIWidth), BindingFlags.Static | BindingFlags.Public);
-        private static readonly FieldInfo LeftMultiplierFieldInfo = typeof(UltrawideUI).GetField(nameof(UltrawideUI.LeftMultiplier), BindingFlags.Static | BindingFlags.Public);
-        private static readonly FieldInfo RightMultiplierFieldInfo = typeof(UltrawideUI).GetField(nameof(UltrawideUI.RightMultiplier), BindingFlags.Static | BindingFlags.Public);
-        private static readonly FieldInfo ScreenWidthFieldInfo = typeof(UI).GetField(nameof(UI.screenWidth), BindingFlags.Static | BindingFlags.Public);
+        public static readonly FieldInfo UIWidthFieldInfo = typeof(UltrawideUI).GetField(nameof(UltrawideUI.UIWidth), BindingFlags.Static | BindingFlags.Public);
+        public static readonly FieldInfo LeftMultiplierFieldInfo = typeof(UltrawideUI).GetField(nameof(UltrawideUI.LeftMultiplier), BindingFlags.Static | BindingFlags.Public);
+        public static readonly FieldInfo RightMultiplierFieldInfo = typeof(UltrawideUI).GetField(nameof(UltrawideUI.RightMultiplier), BindingFlags.Static | BindingFlags.Public);
+        public static readonly FieldInfo ScreenWidthFieldInfo = typeof(UI).GetField(nameof(UI.screenWidth), BindingFlags.Static | BindingFlags.Public);
 
         public override string ModIdentifier
         {
@@ -43,8 +41,8 @@ namespace UltrawideUI
             UIWidthHandle.CustomDrawer = rect =>
             {
                 var textFieldWidth = 40f;
-                //UIWidthHandle.Value = Widgets.HorizontalSlider(new Rect(rect.x, rect.y, rect.width - textFieldWidth, rect.height), UIWidthHandle, .33f, 1f);
-                UIWidthHandle.Value = Widgets.HorizontalSlider_NewTemp(new Rect(rect.x, rect.y, rect.width - textFieldWidth, rect.height), UIWidthHandle, .33f, 1f);
+                UIWidthHandle.Value = Widgets.HorizontalSlider(new Rect(rect.x, rect.y, rect.width - textFieldWidth, rect.height), UIWidthHandle, .33f, 1f);
+                //UIWidthHandle.Value = Widgets.HorizontalSlider_NewTemp(new Rect(rect.x, rect.y, rect.width - textFieldWidth, rect.height), UIWidthHandle, .33f, 1f);
                 var labelText = String.Format("{0,5}", (int)(UIWidthHandle.Value * 100) + "%");
                 Widgets.Label(new Rect(rect.x + rect.width - textFieldWidth, rect.y, textFieldWidth, rect.height), labelText);
                 return false;
@@ -169,6 +167,17 @@ namespace UltrawideUI
             public static void Prefix(ref float startX)
             {
                 startX += UI.screenWidth * LeftMultiplier;
+            }
+        }
+
+        // Conditions (e.g. drone)
+        [HarmonyPatch(typeof(RimWorld.GameConditionManager), "DoConditionsUI")]
+        public static class GameConditionManager_DoConditionsUI_Patch
+        {
+            [HarmonyPrefix]
+            public static void Prefix(ref Rect rect)
+            {
+                rect.x -= UI.screenWidth * LeftMultiplier;
             }
         }
 
@@ -565,7 +574,6 @@ namespace UltrawideUI
             }
         }
 
-        /*
         // Map search
         [HarmonyPatch(typeof(RimWorld.Dialog_MapSearch), "SetInitialSizeAndPosition")]
         public static class Dialog_MapSearch_SetInitialSizeAndPosition_Patch
@@ -584,42 +592,6 @@ namespace UltrawideUI
                             codes.Insert(i + 4, new CodeInstruction(OpCodes.Mul));
                             break;
                         }
-                    }
-                }
-                return codes.AsEnumerable();
-            }
-        }
-        */
-
-        // Gear, logs, health,etc tabs for RimHUD
-        [HarmonyPatch(typeof(RimHUD.Interface.Screen.InspectPaneTabs), "Draw")]
-        public static class RimHUD_InspectPaneTabs_Draw_Patch
-        {
-            static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
-            {
-                bool didNum = false;
-                int counter = 0;
-                var codes = new List<CodeInstruction>(instructions);
-                for (var i = 0; i < codes.Count; i++)
-                {
-                    if (!didNum && codes[i].opcode == OpCodes.Ldloc_1)
-                    {
-                        didNum = true;
-                        codes.Insert(i + 1, new CodeInstruction(OpCodes.Ldsfld, ScreenWidthFieldInfo));
-                        codes.Insert(i + 2, new CodeInstruction(OpCodes.Conv_R4));
-                        codes.Insert(i + 3, new CodeInstruction(OpCodes.Ldsfld, LeftMultiplierFieldInfo));
-                        codes.Insert(i + 4, new CodeInstruction(OpCodes.Conv_R4));
-                        codes.Insert(i + 5, new CodeInstruction(OpCodes.Mul));
-                        codes.Insert(i + 6, new CodeInstruction(OpCodes.Add));
-                    }
-                    else if (codes[i].opcode == OpCodes.Ldc_R4 && (float)codes[i].operand == 0f && ++counter == 2)
-                    {
-                        codes[i] = new CodeInstruction(OpCodes.Ldsfld, ScreenWidthFieldInfo);
-                        codes.Insert(i + 1, new CodeInstruction(OpCodes.Conv_R4));
-                        codes.Insert(i + 2, new CodeInstruction(OpCodes.Ldsfld, LeftMultiplierFieldInfo));
-                        codes.Insert(i + 3, new CodeInstruction(OpCodes.Conv_R4));
-                        codes.Insert(i + 4, new CodeInstruction(OpCodes.Mul));
-                        break;
                     }
                 }
                 return codes.AsEnumerable();
