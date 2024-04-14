@@ -191,17 +191,6 @@ namespace UltrawideUI
             }
         }
 
-        // Conditions (e.g. drone)
-        [HarmonyPatch(typeof(RimWorld.GameConditionManager), "DoConditionsUI")]
-        public static class GameConditionManager_DoConditionsUI_Patch
-        {
-            [HarmonyPrefix]
-            public static void Prefix(ref Rect rect)
-            {
-                rect.x -= UI.screenWidth * LeftMultiplier;
-            }
-        }
-
         // Global controls bottom right
         [HarmonyPatch(typeof(RimWorld.GlobalControls), "GlobalControlsOnGUI")]
         public static class GlobalControls_GlobalControlsOnGUI_Patch
@@ -209,16 +198,34 @@ namespace UltrawideUI
             static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
             {
                 var codes = new List<CodeInstruction>(instructions);
+                int counter = 0;
                 for (var i = 0; i < codes.Count; i++)
                 {
                     if (codes[i].opcode == OpCodes.Ldsfld && codes[i].operand is FieldInfo fieldInfo)
                     {
                         if (fieldInfo.Name == "screenWidth" && fieldInfo.DeclaringType.FullName == "Verse.UI")
                         {
-                            codes.Insert(i + 2, new CodeInstruction(OpCodes.Ldsfld, RightMultiplierFieldInfo));
-                            codes.Insert(i + 3, new CodeInstruction(OpCodes.Conv_R4));
-                            codes.Insert(i + 4, new CodeInstruction(OpCodes.Mul));
-                            break;
+                            if (++counter == 1)
+                            {
+                                codes.Insert(i + 2, new CodeInstruction(OpCodes.Ldsfld, RightMultiplierFieldInfo));
+                                codes.Insert(i + 3, new CodeInstruction(OpCodes.Conv_R4));
+                                codes.Insert(i + 4, new CodeInstruction(OpCodes.Mul));
+                            }
+                            else if (counter == 2)
+                            {
+                                codes.Insert(i + 1, new CodeInstruction(OpCodes.Conv_R4));
+                                codes.Insert(i + 2, new CodeInstruction(OpCodes.Ldsfld, RightMultiplierFieldInfo));
+                                codes.Insert(i + 3, new CodeInstruction(OpCodes.Conv_R4));
+                                codes.Insert(i + 4, new CodeInstruction(OpCodes.Mul));
+                                codes.Insert(i + 5, new CodeInstruction(OpCodes.Conv_I4));
+                            }
+                            else if (counter == 3)
+                            {
+                                codes.Insert(i + 2, new CodeInstruction(OpCodes.Ldsfld, RightMultiplierFieldInfo));
+                                codes.Insert(i + 3, new CodeInstruction(OpCodes.Conv_R4));
+                                codes.Insert(i + 4, new CodeInstruction(OpCodes.Mul));
+                                break;
+                            }
                         }
                     }
                 }
