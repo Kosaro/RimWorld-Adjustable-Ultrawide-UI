@@ -19,11 +19,15 @@ namespace UltrawideUI
         public static float UIWidth = 1f;
         public static float LeftMultiplier = 0f;
         public static float RightMultiplier = 1f;
+        private static float ResourceListMultiplier = 0f;
 
         public static readonly FieldInfo UIWidthFieldInfo = typeof(UltrawideUI).GetField(nameof(UltrawideUI.UIWidth), BindingFlags.Static | BindingFlags.Public);
         public static readonly FieldInfo LeftMultiplierFieldInfo = typeof(UltrawideUI).GetField(nameof(UltrawideUI.LeftMultiplier), BindingFlags.Static | BindingFlags.Public);
         public static readonly FieldInfo RightMultiplierFieldInfo = typeof(UltrawideUI).GetField(nameof(UltrawideUI.RightMultiplier), BindingFlags.Static | BindingFlags.Public);
         public static readonly FieldInfo ScreenWidthFieldInfo = typeof(UI).GetField(nameof(UI.screenWidth), BindingFlags.Static | BindingFlags.Public);
+        private static readonly FieldInfo ResourceListMultiplierFieldInfo = typeof(UltrawideUI).GetField(nameof(UltrawideUI.ResourceListMultiplier), BindingFlags.Static | BindingFlags.NonPublic);
+
+        private static HugsLib.Settings.SettingHandle<bool> IgnoreResourceList;
 
         public override string ModIdentifier
         {
@@ -33,6 +37,8 @@ namespace UltrawideUI
         public override void DefsLoaded()
         {
             var UIWidthHandle = Settings.GetHandle<float>("UIWidth", "UI width", "Percentage of the screen's width that the UI uses", 1f);
+            IgnoreResourceList = Settings.GetHandle<bool>("IgnoreResourceList", "Ignore resource list", "Turn on to keep the resource list on the edge of the screen", false);
+
             UpdateVariables(UIWidthHandle.Value);
             UIWidthHandle.ValueChanged += handle =>
             {
@@ -47,12 +53,18 @@ namespace UltrawideUI
                 Widgets.Label(new Rect(rect.x + rect.width - textFieldWidth, rect.y, textFieldWidth, rect.height), labelText);
                 return false;
             };
+
+            IgnoreResourceList.ValueChanged += handle =>
+            {
+                ResourceListMultiplier = IgnoreResourceList ? 0f : LeftMultiplier;
+            };
         }
         public static void UpdateVariables(float uiWidth)
         {
             UIWidth = uiWidth;
             LeftMultiplier = 0.5f - uiWidth / 2;
             RightMultiplier = 0.5f + uiWidth / 2;
+            ResourceListMultiplier = IgnoreResourceList ? 0f : LeftMultiplier;
         }
 
         // Tab after pressing button on bottom bar
@@ -306,7 +318,7 @@ namespace UltrawideUI
                         didList = true;
                         codes.Insert(i + 1, new CodeInstruction(OpCodes.Ldsfld, ScreenWidthFieldInfo));
                         codes.Insert(i + 2, new CodeInstruction(OpCodes.Conv_R4));
-                        codes.Insert(i + 3, new CodeInstruction(OpCodes.Ldsfld, LeftMultiplierFieldInfo));
+                        codes.Insert(i + 3, new CodeInstruction(OpCodes.Ldsfld, ResourceListMultiplierFieldInfo));
                         codes.Insert(i + 4, new CodeInstruction(OpCodes.Conv_R4));
                         codes.Insert(i + 5, new CodeInstruction(OpCodes.Mul));
                         codes.Insert(i + 6, new CodeInstruction(OpCodes.Add));
@@ -316,7 +328,7 @@ namespace UltrawideUI
                         didCategorized = true;
                         codes.Insert(i + 1, new CodeInstruction(OpCodes.Ldsfld, ScreenWidthFieldInfo));
                         codes.Insert(i + 2, new CodeInstruction(OpCodes.Conv_R4));
-                        codes.Insert(i + 3, new CodeInstruction(OpCodes.Ldsfld, LeftMultiplierFieldInfo));
+                        codes.Insert(i + 3, new CodeInstruction(OpCodes.Ldsfld, ResourceListMultiplierFieldInfo));
                         codes.Insert(i + 4, new CodeInstruction(OpCodes.Conv_R4));
                         codes.Insert(i + 5, new CodeInstruction(OpCodes.Mul));
                         codes.Insert(i + 6, new CodeInstruction(OpCodes.Add));

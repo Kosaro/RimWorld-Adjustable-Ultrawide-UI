@@ -1,19 +1,19 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUI\\",
+  "WorkspaceRootPath": "C:\\Users\\okosa\\Desktop\\UltrawideUI\\Source\\UltrawideUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BD237516-B75C-4C7E-B239-E885855EF35C}|UltrawideUI.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\ultrawideui\\source\\ultrawideui\\source\\ultrawideui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BD237516-B75C-4C7E-B239-E885855EF35C}|UltrawideUI.csproj|c:\\users\\okosa\\desktop\\ultrawideui\\source\\ultrawideui\\source\\ultrawideui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD237516-B75C-4C7E-B239-E885855EF35C}|UltrawideUI.csproj|solutionrelative:source\\ultrawideui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E496E44F-F3C0-4008-AB84-352B5C73A3A6}|..\\UltrawideUIFoodAlertPatch\\UltrawideUIFoodAlertPatch.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\ultrawideui\\source\\ultrawideuifoodalertpatch\\foodalertpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4E2945B-5989-4414-973B-7A8F01D765DD}|..\\UltrawideUIRimHUDPatch\\UltrawideUIRimHUDPatch.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\ultrawideui\\source\\ultrawideuirimhudpatch\\rimhudpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|UltrawideUIRimHUDPatch||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIFoodAlertPatch\\FoodAlertPatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIRimHUDPatch\\RimHUDPatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,35 +27,35 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FoodAlertPatch.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIFoodAlertPatch\\FoodAlertPatch.cs",
-              "RelativeDocumentMoniker": "..\\UltrawideUIFoodAlertPatch\\FoodAlertPatch.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIFoodAlertPatch\\FoodAlertPatch.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIFoodAlertPatch\\FoodAlertPatch.cs",
-              "RelativeToolTip": "..\\UltrawideUIFoodAlertPatch\\FoodAlertPatch.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIFoodAlertPatch\\FoodAlertPatch.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAACQAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-13T21:12:10.652Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "UltrawideUIRimHUDPatch",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIRimHUDPatch\\UltrawideUIRimHUDPatch.csproj",
-              "RelativeDocumentMoniker": "..\\UltrawideUIRimHUDPatch\\UltrawideUIRimHUDPatch.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIRimHUDPatch\\UltrawideUIRimHUDPatch.csproj",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIRimHUDPatch\\UltrawideUIRimHUDPatch.csproj",
-              "RelativeToolTip": "..\\UltrawideUIRimHUDPatch\\UltrawideUIRimHUDPatch.csproj",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIRimHUDPatch\\UltrawideUIRimHUDPatch.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-04-13T20:52:28.88Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "RimHUDPatch.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIRimHUDPatch\\RimHUDPatch.cs",
-              "RelativeDocumentMoniker": "..\\UltrawideUIRimHUDPatch\\RimHUDPatch.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIRimHUDPatch\\RimHUDPatch.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIRimHUDPatch\\RimHUDPatch.cs",
-              "RelativeToolTip": "..\\UltrawideUIRimHUDPatch\\RimHUDPatch.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIRimHUDPatch\\RimHUDPatch.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAiwBcAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-13T20:31:27.005Z"
@@ -64,11 +64,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UltrawideUI.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUI\\Source\\UltrawideUI.cs",
+              "DocumentMoniker": "C:\\Users\\okosa\\Desktop\\UltrawideUI\\Source\\UltrawideUI\\Source\\UltrawideUI.cs",
               "RelativeDocumentMoniker": "Source\\UltrawideUI.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUI\\Source\\UltrawideUI.cs",
+              "ToolTip": "C:\\Users\\okosa\\Desktop\\UltrawideUI\\Source\\UltrawideUI\\Source\\UltrawideUI.cs",
               "RelativeToolTip": "Source\\UltrawideUI.cs",
-              "ViewState": "AQIAAFMCAAAAAAAAAAA2wFwCAAAIAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAH8CAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-08T06:13:35.316Z",
               "EditorCaption": ""

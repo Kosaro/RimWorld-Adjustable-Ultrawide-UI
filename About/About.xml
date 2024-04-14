@@ -11,7 +11,7 @@
 
 Icon made by agus raharjo from www.flaticon.com
   </description>
-  <modVersion>1.2.2</modVersion>
+  <modVersion>1.3.0</modVersion>
   <modDependencies>
     <li>
       <packageId>brrainz.harmony</packageId>
