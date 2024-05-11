@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltrawideUIRimHUDPatch", ".
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltrawideUIFoodAlertPatch", "..\UltrawideUIFoodAlertPatch\UltrawideUIFoodAlertPatch.csproj", "{E496E44F-F3C0-4008-AB84-352B5C73A3A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltrawideUIAchievementsExpandedPatch", "..\UltrawideUIAchievmentsExpandedPatch\UltrawideUIAchievementsExpandedPatch.csproj", "{D28CCA1F-C78B-4317-81A9-B03C6D1D8082}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltrawideUIVFEEmpirePatch", "..\UltrawideUIVFEEmpirePatch\UltrawideUIVFEEmpirePatch.csproj", "{515F91AC-22A0-4131-91C1-6F90CEBF74B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{E496E44F-F3C0-4008-AB84-352B5C73A3A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E496E44F-F3C0-4008-AB84-352B5C73A3A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E496E44F-F3C0-4008-AB84-352B5C73A3A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D28CCA1F-C78B-4317-81A9-B03C6D1D8082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D28CCA1F-C78B-4317-81A9-B03C6D1D8082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D28CCA1F-C78B-4317-81A9-B03C6D1D8082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D28CCA1F-C78B-4317-81A9-B03C6D1D8082}.Release|Any CPU.Build.0 = Release|Any CPU
+		{515F91AC-22A0-4131-91C1-6F90CEBF74B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{515F91AC-22A0-4131-91C1-6F90CEBF74B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{515F91AC-22A0-4131-91C1-6F90CEBF74B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{515F91AC-22A0-4131-91C1-6F90CEBF74B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

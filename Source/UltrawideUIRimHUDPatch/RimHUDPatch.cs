@@ -24,7 +24,6 @@ namespace UltrawideUI
             var harmony = new Harmony("UltrawideUI.RimHUDPatch");
             var assembly = Assembly.GetExecutingAssembly();
             harmony.PatchAll(assembly);
-                //Log.Error("RimHUD patch ");
         }
 
         // Gear, logs, health,etc tabs for RimHUD
