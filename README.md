@@ -10,6 +10,7 @@ So far I've added support for:
 * FoodAlert (Continued)
 * Vanilla Achievements Expanded
 * Vanilla Factions Expanded - Empire
+* Vanilla Psycasts Expanded
 
 If you find any bugs or compatibility issues, let me know.
 
