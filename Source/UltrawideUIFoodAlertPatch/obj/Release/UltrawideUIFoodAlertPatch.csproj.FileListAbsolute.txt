@@ -2,3 +2,6 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Source\U
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Source\UltrawideUIFoodAlertPatch\obj\Release\UltrawideUIFoodAlertPatch.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Assemblies\UltrawideUIFoodAlertPatch.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Source\UltrawideUIFoodAlertPatch\obj\Release\UltrawideUIFoodAlertPatch.dll
+C:\Users\okosa\Desktop\RimWorld-Adjustable-Ultrawide-UI-main\RimWorld-Adjustable-Ultrawide-UI-main\Source\UltrawideUIFoodAlertPatch\obj\Release\UltrawideUIFoodAlertPatch.csproj.AssemblyReference.cache
+C:\Users\okosa\Desktop\RimWorld-Adjustable-Ultrawide-UI-main\RimWorld-Adjustable-Ultrawide-UI-main\Source\UltrawideUIFoodAlertPatch\obj\Release\UltrawideUIFoodAlertPatch.csproj.CoreCompileInputs.cache
+C:\Users\okosa\Desktop\RimWorld-Adjustable-Ultrawide-UI-main\RimWorld-Adjustable-Ultrawide-UI-main\Source\UltrawideUIFoodAlertPatch\obj\Release\UltrawideUIFoodAlertPatch.dll

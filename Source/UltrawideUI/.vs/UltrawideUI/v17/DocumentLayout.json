@@ -1,22 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUI\\",
+  "WorkspaceRootPath": "C:\\Users\\okosa\\Documents\\GitHub\\RimWorld-Adjustable-Ultrawide-UI\\Source\\UltrawideUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BD237516-B75C-4C7E-B239-E885855EF35C}|UltrawideUI.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\ultrawideui\\source\\ultrawideui\\source\\ultrawideui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD237516-B75C-4C7E-B239-E885855EF35C}|UltrawideUI.csproj|solutionrelative:source\\ultrawideui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{515F91AC-22A0-4131-91C1-6F90CEBF74B8}|..\\UltrawideUIVFEEmpirePatch\\UltrawideUIVFEEmpirePatch.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\ultrawideui\\source\\ultrawideuivfeempirepatch\\vfeempirepatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D28CCA1F-C78B-4317-81A9-B03C6D1D8082}|..\\UltrawideUIAchievmentsExpandedPatch\\UltrawideUIAchievementsExpandedPatch.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\ultrawideui\\source\\ultrawideuiachievmentsexpandedpatch\\achievementsexpandedpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4E2945B-5989-4414-973B-7A8F01D765DD}|..\\UltrawideUIRimHUDPatch\\UltrawideUIRimHUDPatch.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\ultrawideui\\source\\ultrawideuirimhudpatch\\rimhudpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E496E44F-F3C0-4008-AB84-352B5C73A3A6}|..\\UltrawideUIFoodAlertPatch\\UltrawideUIFoodAlertPatch.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\ultrawideui\\source\\ultrawideuifoodalertpatch\\foodalertpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\okosa\\Desktop\\RimWorld-Adjustable-Ultrawide-UI-main\\RimWorld-Adjustable-Ultrawide-UI-main\\Source\\UltrawideUIVanillaPsycastsExpandedPatch\\VanillaPsycastsExpandedPatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,67 +13,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VFEEmpirePatch.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIVFEEmpirePatch\\VFEEmpirePatch.cs",
-              "RelativeDocumentMoniker": "..\\UltrawideUIVFEEmpirePatch\\VFEEmpirePatch.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIVFEEmpirePatch\\VFEEmpirePatch.cs",
-              "RelativeToolTip": "..\\UltrawideUIVFEEmpirePatch\\VFEEmpirePatch.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAYwD8AAAByAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T02:42:34.458Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FoodAlertPatch.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIFoodAlertPatch\\FoodAlertPatch.cs",
-              "RelativeDocumentMoniker": "..\\UltrawideUIFoodAlertPatch\\FoodAlertPatch.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIFoodAlertPatch\\FoodAlertPatch.cs",
-              "RelativeToolTip": "..\\UltrawideUIFoodAlertPatch\\FoodAlertPatch.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAwCgAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T01:46:27.975Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RimHUDPatch.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIRimHUDPatch\\RimHUDPatch.cs",
-              "RelativeDocumentMoniker": "..\\UltrawideUIRimHUDPatch\\RimHUDPatch.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIRimHUDPatch\\RimHUDPatch.cs",
-              "RelativeToolTip": "..\\UltrawideUIRimHUDPatch\\RimHUDPatch.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T01:46:15.464Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AchievementsExpandedPatch.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIAchievmentsExpandedPatch\\AchievementsExpandedPatch.cs",
-              "RelativeDocumentMoniker": "..\\UltrawideUIAchievmentsExpandedPatch\\AchievementsExpandedPatch.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIAchievmentsExpandedPatch\\AchievementsExpandedPatch.cs",
-              "RelativeToolTip": "..\\UltrawideUIAchievmentsExpandedPatch\\AchievementsExpandedPatch.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAiwBcAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T00:47:14.893Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UltrawideUI.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUI\\Source\\UltrawideUI.cs",
-              "RelativeDocumentMoniker": "Source\\UltrawideUI.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUI\\Source\\UltrawideUI.cs",
-              "RelativeToolTip": "Source\\UltrawideUI.cs",
-              "ViewState": "AQIAAIEBAAAAAAAAAAAcwJsBAAAAAAAA",
+              "Title": "VanillaPsycastsExpandedPatch.cs",
+              "DocumentMoniker": "C:\\Users\\okosa\\Desktop\\RimWorld-Adjustable-Ultrawide-UI-main\\RimWorld-Adjustable-Ultrawide-UI-main\\Source\\UltrawideUIVanillaPsycastsExpandedPatch\\VanillaPsycastsExpandedPatch.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Desktop\\RimWorld-Adjustable-Ultrawide-UI-main\\RimWorld-Adjustable-Ultrawide-UI-main\\Source\\UltrawideUIVanillaPsycastsExpandedPatch\\VanillaPsycastsExpandedPatch.cs",
+              "ToolTip": "C:\\Users\\okosa\\Desktop\\RimWorld-Adjustable-Ultrawide-UI-main\\RimWorld-Adjustable-Ultrawide-UI-main\\Source\\UltrawideUIVanillaPsycastsExpandedPatch\\VanillaPsycastsExpandedPatch.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Desktop\\RimWorld-Adjustable-Ultrawide-UI-main\\RimWorld-Adjustable-Ultrawide-UI-main\\Source\\UltrawideUIVanillaPsycastsExpandedPatch\\VanillaPsycastsExpandedPatch.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T06:13:35.316Z",
+              "WhenOpened": "2025-01-17T00:38:17.929Z",
               "EditorCaption": ""
             }
           ]

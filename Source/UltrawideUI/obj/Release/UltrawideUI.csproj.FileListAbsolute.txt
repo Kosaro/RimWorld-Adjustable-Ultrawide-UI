@@ -2,3 +2,7 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Assembli
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Source\UltrawideUI\obj\Release\UltrawideUI.csproj.AssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Source\UltrawideUI\obj\Release\UltrawideUI.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Source\UltrawideUI\obj\Release\UltrawideUI.dll
+C:\Users\okosa\Desktop\RimWorld-Adjustable-Ultrawide-UI-main\RimWorld-Adjustable-Ultrawide-UI-main\Source\UltrawideUI\obj\Release\UltrawideUI.csproj.AssemblyReference.cache
+C:\Users\okosa\Desktop\RimWorld-Adjustable-Ultrawide-UI-main\RimWorld-Adjustable-Ultrawide-UI-main\Source\UltrawideUI\obj\Release\UltrawideUI.csproj.CoreCompileInputs.cache
+C:\Users\okosa\Desktop\RimWorld-Adjustable-Ultrawide-UI-main\RimWorld-Adjustable-Ultrawide-UI-main\Source\UltrawideUI\obj\Release\UltrawideUI.dll
+C:\Users\okosa\Desktop\RimWorld-Adjustable-Ultrawide-UI-main\RimWorld-Adjustable-Ultrawide-UI-main\Assemblies\UltrawideUI.dll

@@ -27,3 +27,7 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Source\U
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Source\UltrawideUIAchievmentsExpandedPatch\obj\Release\UltrawideUIAchievmentsExpandedPatch.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Assemblies\UltrawideUIAchievmentsExpandedPatch.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Assemblies\UltrawideUIAchievmentsExpandedPatch.pdb
+C:\Users\okosa\Desktop\RimWorld-Adjustable-Ultrawide-UI-main\RimWorld-Adjustable-Ultrawide-UI-main\Source\UltrawideUIAchievmentsExpandedPatch\obj\Release\UltrawideUIAchievementsExpandedPatch.csproj.AssemblyReference.cache
+C:\Users\okosa\Desktop\RimWorld-Adjustable-Ultrawide-UI-main\RimWorld-Adjustable-Ultrawide-UI-main\Source\UltrawideUIAchievmentsExpandedPatch\obj\Release\UltrawideUIAchievementsExpandedPatch.csproj.CoreCompileInputs.cache
+C:\Users\okosa\Desktop\RimWorld-Adjustable-Ultrawide-UI-main\RimWorld-Adjustable-Ultrawide-UI-main\Source\UltrawideUIAchievmentsExpandedPatch\obj\Release\UltrawideUIAchievmentsExpandedPatch.dll
+C:\Users\okosa\Desktop\RimWorld-Adjustable-Ultrawide-UI-main\RimWorld-Adjustable-Ultrawide-UI-main\Source\UltrawideUIAchievmentsExpandedPatch\obj\Release\UltrawideUIAchievmentsExpandedPatch.pdb

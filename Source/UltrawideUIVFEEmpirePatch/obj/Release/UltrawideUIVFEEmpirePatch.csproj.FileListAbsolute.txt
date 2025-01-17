@@ -26,3 +26,7 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Source\U
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Source\UltrawideUIVFEEmpirePatch\obj\Release\UltrawideUIVFEEmpirePatch.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Assemblies\UltrawideUIVFEEmpirePatch.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Assemblies\UltrawideUIVFEEmpirePatch.pdb
+C:\Users\okosa\Desktop\RimWorld-Adjustable-Ultrawide-UI-main\RimWorld-Adjustable-Ultrawide-UI-main\Source\UltrawideUIVFEEmpirePatch\obj\Release\UltrawideUIVFEEmpirePatch.csproj.AssemblyReference.cache
+C:\Users\okosa\Desktop\RimWorld-Adjustable-Ultrawide-UI-main\RimWorld-Adjustable-Ultrawide-UI-main\Source\UltrawideUIVFEEmpirePatch\obj\Release\UltrawideUIVFEEmpirePatch.csproj.CoreCompileInputs.cache
+C:\Users\okosa\Desktop\RimWorld-Adjustable-Ultrawide-UI-main\RimWorld-Adjustable-Ultrawide-UI-main\Source\UltrawideUIVFEEmpirePatch\obj\Release\UltrawideUIVFEEmpirePatch.dll
+C:\Users\okosa\Desktop\RimWorld-Adjustable-Ultrawide-UI-main\RimWorld-Adjustable-Ultrawide-UI-main\Source\UltrawideUIVFEEmpirePatch\obj\Release\UltrawideUIVFEEmpirePatch.pdb

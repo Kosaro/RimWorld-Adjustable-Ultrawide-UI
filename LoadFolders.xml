@@ -13,5 +13,6 @@
     <li IfModActive="Mlie.FoodAlert">FoodAlert</li>
     <li IfModActive="vanillaexpanded.achievements">AchievementsExpanded</li>
     <li IfModActive="OskarPotocki.VFE.Empire">VFEEmpire</li>
+    <li IfModActive="VanillaExpanded.VPsycastsE">VanillaPsycastsExpanded</li>
   </v1.5>
 </loadFolders>
