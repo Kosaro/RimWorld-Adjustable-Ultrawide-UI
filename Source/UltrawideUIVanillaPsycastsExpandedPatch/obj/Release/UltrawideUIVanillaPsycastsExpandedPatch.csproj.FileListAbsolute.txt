@@ -7,3 +7,7 @@ C:\Users\okosa\Desktop\RimWorld-Adjustable-Ultrawide-UI-main\RimWorld-Adjustable
 C:\Users\okosa\Desktop\RimWorld-Adjustable-Ultrawide-UI-main\RimWorld-Adjustable-Ultrawide-UI-main\Source\UltrawideUIVanillaPsycastsExpandedPatch\obj\Release\UltrawideUIVanillaPsycastsExpandedPatch.dll
 C:\Users\okosa\Desktop\RimWorld-Adjustable-Ultrawide-UI-main\RimWorld-Adjustable-Ultrawide-UI-main\Source\UltrawideUIVanillaPsycastsExpandedPatch\obj\Release\UltrawideUIVanillaPsycastsExpandedPatch.pdb
 C:\Users\okosa\Desktop\RimWorld-Adjustable-Ultrawide-UI-main\RimWorld-Adjustable-Ultrawide-UI-main\Source\UltrawideUIVanillaPsycastsExpandedPatch\bin\Release\UltrawideUI.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Source\UltrawideUIVanillaPsycastsExpandedPatch\obj\Release\UltrawideUIVanillaPsycastsExpandedPatch.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Source\UltrawideUIVanillaPsycastsExpandedPatch\obj\Release\UltrawideUIVanillaPsycastsExpandedPatch.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Source\UltrawideUIVanillaPsycastsExpandedPatch\obj\Release\UltrawideUIVanillaPsycastsExpandedPatch.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Source\UltrawideUIVanillaPsycastsExpandedPatch\obj\Release\UltrawideUIVanillaPsycastsExpandedPatch.pdb

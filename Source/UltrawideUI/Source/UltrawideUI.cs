@@ -47,8 +47,7 @@ namespace UltrawideUI
             UIWidthHandle.CustomDrawer = rect =>
             {
                 var textFieldWidth = 40f;
-                UIWidthHandle.Value = Widgets.HorizontalSlider(new Rect(rect.x, rect.y, rect.width - textFieldWidth, rect.height), UIWidthHandle, .33f, 1f);
-                //UIWidthHandle.Value = Widgets.HorizontalSlider_NewTemp(new Rect(rect.x, rect.y, rect.width - textFieldWidth, rect.height), UIWidthHandle, .33f, 1f);
+                UIWidthHandle.Value = Widgets.HorizontalSlider(new Rect(rect.x, rect.y, rect.width - textFieldWidth, rect.height), UIWidthHandle, .3f, 1f);
                 var labelText = String.Format("{0,5}", (int)(UIWidthHandle.Value * 100) + "%");
                 Widgets.Label(new Rect(rect.x + rect.width - textFieldWidth, rect.y, textFieldWidth, rect.height), labelText);
                 return false;
@@ -84,6 +83,48 @@ namespace UltrawideUI
                 }
             }
         }
+
+        // Panes for animals, mechs, schedule and work
+        [HarmonyPatch(typeof(RimWorld.MainTabWindow_PawnTable), "DoWindowContents")]
+        public static class MainTabWindow_PawnTable_DoWindowContents_Patch
+        {
+            public static void Postfix(MainTabWindow __instance)
+            {
+                if (__instance.windowRect.width > UI.screenWidth * UIWidth)
+                {
+                    __instance.windowRect.width = UI.screenWidth * UIWidth;
+                }
+            }
+        }
+
+        // Contents in panes for animals, mechs, schedule and work
+        [HarmonyPatch(typeof(RimWorld.PawnTable), "RecacheSize")]
+        public static class MainTabWindow_PawnTable_RecacheSize
+        {
+            static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+            {
+                var counter = 0;
+                var codes = new List<CodeInstruction>(instructions);
+                for (var i = 0; i < codes.Count; i++)
+                {
+                    if (codes[i].opcode == OpCodes.Ldsfld && codes[i].operand is FieldInfo fieldInfo)
+                    {
+                        if (fieldInfo.Name == "screenWidth" && fieldInfo.DeclaringType.FullName == "Verse.UI")
+                        {
+                            codes.Insert(i + 2, new CodeInstruction(OpCodes.Ldsfld, UIWidthFieldInfo));
+                            codes.Insert(i + 3, new CodeInstruction(OpCodes.Conv_R4));
+                            codes.Insert(i + 4, new CodeInstruction(OpCodes.Mul));
+                            if (++counter == 2)
+                            {
+                                break;
+                            }
+                        }
+                    }
+                }
+                return codes.AsEnumerable();
+            }
+        }
+
 
         // Research pane
         [HarmonyPatch(typeof(RimWorld.MainTabWindow_Research), "DoWindowContents")]
