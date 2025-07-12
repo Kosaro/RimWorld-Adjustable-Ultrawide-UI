@@ -668,7 +668,7 @@ namespace UltrawideUI
             }
         }
 
-        // Box for rotating furniture and selecting draw shapes.
+        // Tab for rotating furniture and selecting draw shapes.
         [HarmonyPatch(typeof(RimWorld.ArchitectCategoryTab), "DesignationTabOnGUI")]
         public static class ArchitectCategoryTab_DesignationTabOnGUI_Patch
         {
@@ -689,6 +689,30 @@ namespace UltrawideUI
                             codes.RemoveAt(i - 1);
                             break;
                         }
+                    }
+                }
+                return codes.AsEnumerable();
+            }
+        }
+
+        // Tab for selecting shape when building walls
+        [HarmonyPatch(typeof(RimWorld.MainTabWindow_Inspect), "ExtraOnGUI")]
+        public static class MainTabWindow_Inspect_ExtraOnGUI_Patch
+        {
+            static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+            {
+                var codes = new List<CodeInstruction>(instructions);
+                for (var i = 0; i < codes.Count; i++)
+                {
+                    if (codes[i].opcode == OpCodes.Ldc_R4 && (float)codes[i].operand == 0f)
+                    {
+                        codes.Insert(i + 1, new CodeInstruction(OpCodes.Ldsfld, ScreenWidthFieldInfo));
+                        codes.Insert(i + 2, new CodeInstruction(OpCodes.Conv_R4));
+                        codes.Insert(i + 3, new CodeInstruction(OpCodes.Ldsfld, LeftMultiplierFieldInfo));
+                        codes.Insert(i + 4, new CodeInstruction(OpCodes.Conv_R4));
+                        codes.Insert(i + 5, new CodeInstruction(OpCodes.Mul));
+                        codes.RemoveAt(i);
+                        break;
                     }
                 }
                 return codes.AsEnumerable();
