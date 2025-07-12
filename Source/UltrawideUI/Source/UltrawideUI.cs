@@ -1,15 +1,15 @@
 ﻿
+using HarmonyLib;
+using HugsLib;
+using RimWorld;
+using RimWorld.Planet;
 using System;
 using System.Collections.Generic;
-using Verse;
-using RimWorld;
-using HarmonyLib;
-using UnityEngine;
-using System.Reflection.Emit;
-using System.Reflection;
-using RimWorld.Planet;
 using System.Linq;
-using HugsLib;
+using System.Reflection;
+using System.Reflection.Emit;
+using UnityEngine;
+using Verse;
 
 namespace UltrawideUI
 {
@@ -665,6 +665,33 @@ namespace UltrawideUI
             public static void Prefix(ref Rect infoRect)
             {
                 infoRect.x += UI.screenWidth * LeftMultiplier;
+            }
+        }
+
+        // Box for rotating furniture and selecting draw shapes.
+        [HarmonyPatch(typeof(RimWorld.ArchitectCategoryTab), "DesignationTabOnGUI")]
+        public static class ArchitectCategoryTab_DesignationTabOnGUI_Patch
+        {
+            static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+            {
+                var codes = new List<CodeInstruction>(instructions);
+                for (var i = 0; i < codes.Count; i++)
+                {
+                    if (codes[i].opcode == OpCodes.Ldsfld && codes[i].operand is FieldInfo fieldInfo)
+                    {
+                        if (fieldInfo.Name == "screenHeight" && fieldInfo.DeclaringType.FullName == "Verse.UI")
+                        {
+                            codes.Insert(i, new CodeInstruction(OpCodes.Ldsfld, ScreenWidthFieldInfo));
+                            codes.Insert(i + 1, new CodeInstruction(OpCodes.Conv_R4));
+                            codes.Insert(i + 2, new CodeInstruction(OpCodes.Ldsfld, LeftMultiplierFieldInfo));
+                            codes.Insert(i + 3, new CodeInstruction(OpCodes.Conv_R4));
+                            codes.Insert(i + 4, new CodeInstruction(OpCodes.Mul));
+                            codes.RemoveAt(i - 1);
+                            break;
+                        }
+                    }
+                }
+                return codes.AsEnumerable();
             }
         }
 

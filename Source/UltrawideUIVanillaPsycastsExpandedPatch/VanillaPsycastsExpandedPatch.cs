@@ -1,8 +1,5 @@
 ﻿using HarmonyLib;
 using System.Reflection;
-using UnityEngine;
-using VanillaPsycastsExpanded.UI;
-using Verse;
 
 namespace UltrawideUI
 {

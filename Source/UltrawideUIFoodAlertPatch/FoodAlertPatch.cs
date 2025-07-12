@@ -1,18 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HarmonyLib;
 using System;
 using System.Collections.Generic;
-using Verse;
-using RimWorld;
-using HarmonyLib;
-using System.Reflection.Emit;
-using System.Reflection;
-using RimWorld.Planet;
 using System.Linq;
-using System.Net;
+using System.Reflection;
+using System.Reflection.Emit;
+using Verse;
 
 namespace UltrawideUI
 {
