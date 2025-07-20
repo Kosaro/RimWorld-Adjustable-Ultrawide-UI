@@ -22,5 +22,6 @@
     <li IfModActive="vanillaexpanded.achievements">AchievementsExpanded</li>
     <li IfModActive="OskarPotocki.VFE.Empire">VFEEmpire</li>
     <li IfModActive="VanillaExpanded.VPsycastsE">VanillaPsycastsExpanded</li>
+    <li IfModActive="GT.Sam.HealthDisplay">HealthDisplay</li>
   </v1.6>
 </loadFolders>
