@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Source\UltrawideUIWorkTab\obj\Release\UltrawideUIWorkTab.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Source\UltrawideUIWorkTab\obj\Release\UltrawideUIWorkTab.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\WorkTab\Assemblies\UltrawideUIWorkTab.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\WorkTab\Assemblies\UltrawideUIWorkTab.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Source\UltrawideUIWorkTab\obj\Release\UltrawideUIWorkTab.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\Source\UltrawideUIWorkTab\obj\Release\UltrawideUIWorkTab.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\WorkTab\Assemblies\UltrawideUIWorkTab.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\UltrawideUI\WorkTab\Assemblies\UltrawideUIWorkTab.pdb

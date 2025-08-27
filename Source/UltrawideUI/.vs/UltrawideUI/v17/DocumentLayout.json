@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{65DAEDD2-C9A1-4418-A254-18C524399038}|..\\UltrawideUIHealthDisplayPatch\\UltrawideUIHealthDisplayPatch.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\ultrawideui\\source\\ultrawideuihealthdisplaypatch\\healthdisplaypatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E13EF4EC-75BF-430E-9CCE-32B31B85C89A}|..\\UltrawideUIWorkTab\\UltrawideUIWorkTab.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\ultrawideui\\source\\ultrawideuiworktab\\worktabpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,14 +18,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HealthDisplayPatch.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIHealthDisplayPatch\\HealthDisplayPatch.cs",
-              "RelativeDocumentMoniker": "..\\UltrawideUIHealthDisplayPatch\\HealthDisplayPatch.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIHealthDisplayPatch\\HealthDisplayPatch.cs",
-              "RelativeToolTip": "..\\UltrawideUIHealthDisplayPatch\\HealthDisplayPatch.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAVAAAA",
+              "Title": "WorkTabPatch.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIWorkTab\\WorkTabPatch.cs",
+              "RelativeDocumentMoniker": "..\\UltrawideUIWorkTab\\WorkTabPatch.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\UltrawideUI\\Source\\UltrawideUIWorkTab\\WorkTabPatch.cs",
+              "RelativeToolTip": "..\\UltrawideUIWorkTab\\WorkTabPatch.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T19:47:31.98Z",
+              "WhenOpened": "2025-08-27T01:23:21.919Z",
               "EditorCaption": ""
             }
           ]
